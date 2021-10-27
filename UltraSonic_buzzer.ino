@@ -3,7 +3,6 @@
   For more project ideas and details, contact us at ec.robotronix01@gmail.com
 */
 
-#include <ESP8266WiFi.h>
 #include <WiFi.h>
 #include <ThingSpeak.h>
 
