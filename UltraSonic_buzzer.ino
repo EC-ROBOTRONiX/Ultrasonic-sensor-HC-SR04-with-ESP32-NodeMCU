@@ -1,23 +1,20 @@
 /*
-  HC-SR04
-
-  Vcc to 5V Pin of the Arduino.
-  Gnd to Gnd Pin of the Arduino.
-  Trig to Digital Pin 9 .
-  Echo to Digital Pin 10.
+  Coded by : Electronics RnD Department @ ROBOTRONiX Engineering Tech Pvt. LTD.
+  For more project ideas and details, contact us at ec.robotronix01@gmail.com
 */
+
 #include <DHT.h>
 #include <WiFi.h>
 #include <MQ135.h>
 #include <ThingSpeak.h>
 
-const int trigPin = 35; //5
-const int echoPin = 34; //6
-const int buzzer = 32;  //7
-const char* ssid = "BitByte_Robotronix";
-const char* pass = "Bitbytedikwzceh@";
-unsigned long myChannelNumber = 1548426;
-const char * myWriteAPIKey = "0NNDK9YTGFVOYCZL";
+const int trigPin = 35; //Trigger Pin
+const int echoPin = 34; //Echo Pin
+const int buzzer = 32;  //Buzzer Positive terminal
+const char* ssid = "Enter Your SSID"; //Enter your Wi-Fi Name
+const char* pass = "Enter your Wi-Fi Password";  //Enter your Wi-Fi password
+unsigned long myChannelNumber = Put your thingspeak channel id here; //Enter your Thingspeak channel id
+const char * myWriteAPIKey = "Put your write API key here";
 WiFiClient client;
 
 long duration;
