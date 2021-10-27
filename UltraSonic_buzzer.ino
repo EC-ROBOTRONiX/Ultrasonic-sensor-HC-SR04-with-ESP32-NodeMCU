@@ -3,9 +3,8 @@
   For more project ideas and details, contact us at ec.robotronix01@gmail.com
 */
 
-#include <DHT.h>
+#include <ESP8266WiFi.h>
 #include <WiFi.h>
-#include <MQ135.h>
 #include <ThingSpeak.h>
 
 const int trigPin = 35; //Trigger Pin
